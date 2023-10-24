@@ -9,6 +9,8 @@ const info = letters.find(l => l.id === letter)
 if (!info) {
   return Astro.redirect("/404")
 }
+
+export const prerender = false;
 ---
 
 <Layout title={`Libro ${info.title}`}>
