@@ -1,0 +1,16 @@
+---
+import Letter from "./LetterItem.astro";
+import { letters } from '../data/letters'
+---
+
+<ul class="grid grid-cols-2 md:grid-cols-3 gap-3 px-4">
+  {
+    letters.map(({ id, title, img }) => {
+      return (
+        <li>
+          <Letter id={id} title={title} img={img} />
+        </li>
+      )
+    })
+  }
+</ul>
