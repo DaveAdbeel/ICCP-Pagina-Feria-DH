@@ -4,7 +4,10 @@ import nodejs from '@astrojs/node'
 
 export default defineConfig({
 	integrations: [tailwind()],
-	output: 'server',
+	output: 'hybrid',
 	site: 'https://DaveAdbeel.github.io',
-	adapter: nodejs()
+	adapter: nodejs({
+    	mode: 'middleware' 
+  })
+
 })
