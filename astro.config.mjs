@@ -8,5 +8,6 @@ export default defineConfig({
 	adapter: nodejs({
     mode: 'middleware' // or 'standalone'
   }),
-	site: 'https://DaveAdbeel.github.io'
+	site: 'https://DaveAdbeel.github.io',
+	base: '/ICCP-Pagina-Feria-DH',
 })
