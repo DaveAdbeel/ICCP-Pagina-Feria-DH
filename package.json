@@ -2,7 +2,6 @@
   "name": "midu-books",
   "type": "module",
   "version": "0.0.1",
-  "packageManager": "^pnpm@8.8.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -28,5 +27,6 @@
     "eslint-plugin-promise": "6.0.1",
     "prettier": "2.7.1",
     "prettier-plugin-astro": "0.5.4"
-  }
+  },
+  "packageManager": "pnpm@8.8.0"
 }
